@@ -1,1 +1,1 @@
-# gytech
+# GY Tech
