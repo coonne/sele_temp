@@ -21,20 +21,20 @@ sleep(5)
 driver.find_element_by_xpath("//input[@node-type='username']").send_keys("coonne")#弹出登录窗口输入账号
 sleep(5)
 driver.find_element_by_xpath("//input[@node-type='password']").send_keys("Zhang12347")#弹出登录窗口输入密码
-sleep(2)
+sleep(4)
 driver.find_element_by_xpath("//a[@node-type='submitBtn']").click()#弹出登录窗口点击登录按钮
 sleep(10)
 driver.find_element_by_xpath("//div[@node-type='focusLink']").click()#点击博主主页上的关注
 sleep(5)
 driver.find_element_by_xpath("//span[@node-type='like_status']").click()#点击第一条微博的LIKE按钮
-#sleep(10)
-#driver.find_element_by_xpath("//span[@node-type='forward_btn_text']").click()#第一条微博的转发按钮
-#sleep(5)
-#driver.find_element_by_xpath("//textarea[@node-type='textEl']").send_keys("可以可以")#弹出转发窗口输入内容
-#sleep(5)
-#driver.find_element_by_xpath("//input[@node-type='originInput']").click()#弹出转发窗口，勾选同时评论
-#sleep(3)
-#driver.find_element_by_xpath("//a[@node-type='submit']").click()#弹出转发窗口中转发按钮
+sleep(10)
+driver.find_element_by_xpath("//span[@node-type='forward_btn_text']").click()#第一条微博的转发按钮
+sleep(5)
+driver.find_element_by_xpath("//textarea[@node-type='textEl']").send_keys("可以可以")#弹出转发窗口输入内容
+sleep(5)
+driver.find_element_by_xpath("//input[@node-type='originInput']").click()#弹出转发窗口，勾选同时评论
+sleep(3)
+driver.find_element_by_xpath("//a[@node-type='submit']").click()#弹出转发窗口中转发按钮
 
 
 #打印
