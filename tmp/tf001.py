@@ -18,7 +18,7 @@ CAPTCHA_IMAGE_PATH = 'C:/tensortest/img/'
 # 用于模型测试的验证码图片的存放路径，它里面的验证码图片作为测试集
 TEST_IMAGE_PATH = 'C:/tensortest/test/'
 # 用于模型测试的验证码图片的个数，从生成的验证码图片中取出来放入测试集中
-TEST_IMAGE_NUMBER = 500
+TEST_IMAGE_NUMBER = 50
 
 
 # 生成验证码图片

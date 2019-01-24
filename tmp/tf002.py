@@ -22,7 +22,7 @@ TRAINING_IMAGE_NAME = []
 # 验证集，用于模型验证的验证码图片的文件名
 VALIDATION_IMAGE_NAME = []
 # 存放训练好的模型的路径
-MODEL_SAVE_PATH = 'C:/tensortest/models/'
+MODEL_SAVE_PATH = 'C:/Users/wangluqing/tensor_models/'
 
 
 def get_image_file_name(imgPath=CAPTCHA_IMAGE_PATH):

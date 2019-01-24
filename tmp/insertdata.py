@@ -8,7 +8,7 @@ sleep(5)
 
 cur = db.cursor()
 
-sql_inster = """insert into wb_stat(wb_login,wb_sec,wb_desc) values ('coonnesuper@163.com','Zhang12347','testacc1')"""
+sql_inster = """insert into wb_stat(wb_login,wb_sec,wb_desc) values ('430867068@qq.com','AA123456789','testacc2')"""
 try:
     cur.execute(sql_inster)
     db.commit()
