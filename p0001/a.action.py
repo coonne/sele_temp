@@ -18,13 +18,14 @@ try:
             for i in dbops2:
                 wb_base(i[1], i[2])
                 driver = webdriver.Chrome() #调用chrome
-                driver.get("https://weibo.com/531456966?topnav=1&wvr=6&topsug=1&is_hot=1") #进入博主主页
-                sleep(10)
+                driver.get("https://weibo.com/rmrb?is_all=1") #进入博主主页
+                sleep(20)
                 driver.find_element_by_xpath("//div[@node-type='focusLink']").click()  # 点击关注
                 sleep(5)
-                driver.find_element_by_xpath("//input[@node-type='username']").send_keys(wb_base())  # 弹出登录窗口输入账号
+                #print ("%s" %(i[1]))
+                driver.find_element_by_xpath("//input[@node-type='username']").send_keys(str(i[1]))  # 弹出登录窗口输入账号
                 sleep(5)
-                driver.find_element_by_xpath("//input[@node-type='password']").send_keys(wb_base())  # 弹出登录窗口输入密码
+                driver.find_element_by_xpath("//input[@node-type='password']").send_keys(str(i[2]))  # 弹出登录窗口输入密码
                 sleep(4)
                 driver.find_element_by_xpath("//a[@node-type='submitBtn']").click()  # 弹出登录窗口点击登录按钮
                 sleep(10)
@@ -41,6 +42,7 @@ try:
                 #driver.find_element_by_xpath("//a[@node-type='submit']").click()#弹出转发窗口中转发按钮
 
                 #sleep(90)
+                driver.close()
 
             db.commit()
 
