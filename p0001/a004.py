@@ -2,7 +2,7 @@
 from selenium import webdriver
 from time import sleep
 from selenium.webdriver.chrome.options import Options
-from a005
+#from a005 import lg_ps
 
 
 
@@ -19,9 +19,9 @@ driver.get("https://weibo.com/531456966?topnav=1&wvr=6&topsug=1&is_hot=1")#进�
 sleep (10)
 driver.find_element_by_xpath("//div[@node-type='focusLink']").click()#点击关注
 sleep(5)
-driver.find_element_by_xpath("//input[@node-type='username']").send_keys("435006847@qq.com")#弹出登录窗口输入账号
+driver.find_element_by_xpath("//input[@node-type='username']").send_keys()#弹出登录窗口输入账号
 sleep(5)
-driver.find_element_by_xpath("//input[@node-type='password']").send_keys("AA1234567890")#弹出登录窗口输入密码
+driver.find_element_by_xpath("//input[@node-type='password']").send_keys()#弹出登录窗口输入密码
 sleep(4)
 driver.find_element_by_xpath("//a[@node-type='submitBtn']").click()#弹出登录窗口点击登录按钮
 sleep(10)

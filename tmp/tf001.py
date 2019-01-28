@@ -6,6 +6,7 @@ import time
 # captcha是用于生成验证码图片的库，可以 pip install captcha 来安装它
 from captcha.image import ImageCaptcha
 
+
 # 用于生成验证码的字符集
 CHAR_SET = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 # 字符集的长度
