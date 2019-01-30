@@ -9,7 +9,7 @@ sql = "select * from wb_stat"
 try:
         cur.execute(sql)
         results = cur.fetchall()
-        print("wb_num","wb_login","wb_sec","wb_desc")
+        print("wb_num", "wb_login", "wb_sec", "wb_desc")
 
         for row in results:
             wb_num = row[0]
