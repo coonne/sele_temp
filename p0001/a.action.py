@@ -29,6 +29,10 @@ try:
                 driver.find_element_by_xpath("//input[@node-type='password']").send_keys(str(i[2]))  # 弹出登录窗口输入密码
                 sleep(4)
                 driver.find_element_by_xpath("//a[@node-type='submitBtn']").click()  # 弹出登录窗口点击登录按钮
+
+
+
+
                 #sleep(10)
                 #driver.find_element_by_xpath("//div[@node-type='focusLink']").click()  # 点击博主主页上的关注
                 sleep(5)
