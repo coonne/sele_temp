@@ -1,5 +1,4 @@
 from selenium import webdriver
-#from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import WebDriverException
 from time import sleep
 import pymysql.cursors
@@ -29,22 +28,15 @@ try:
                     sleep(1)
                     driver.find_element_by_xpath("//input[@node-type='password']").send_keys(str(i[2]))  # 弹出登录窗口输入密码
                     sleep(1)
-                    driver.find_element_by_xpath("//a[@node-type='submitBtn']").click()  # 弹出登录窗口点击登录按钮
+                    driver.find_element_by_xpath("//a[@node-type='submitBtn']").click()  # 弹出登录窗口点击登录按钮LIKE按钮
                     sleep(1)
 
                     try:
                       driver.find_element_by_xpath("//span[@node-type='like_status']").click()  # 点击第一条微博的
 
-                      #success = True
 
                     except WebDriverException as e:
                         pass
-                      #success = False
-
-                    #if success:
-                    #    pass
-#
-                    #else:
 
                     break
                 driver.close()
