@@ -21,18 +21,18 @@ try:
                 while True:
                     driver = webdriver.Chrome() #调用chrome
                     driver.get("https://weibo.com/1694841822/He3oEroRe?from=page_1005051694841822_profile&wvr=6&mod=weibotime&type=comment#_loginLayer_1548740458687") #进入博主主页
-                    sleep(2)
+                    sleep(20)
                     driver.find_element_by_xpath("//span[@node-type='like_status']").click()  # 点击第一条微博的LIKE按钮
-                    sleep(1)
+                    sleep(3)
                     driver.find_element_by_xpath("//input[@node-type='username']").send_keys(str(i[1]))  # 弹出登录窗口输入账号
-                    sleep(1)
+                    sleep(5)
                     driver.find_element_by_xpath("//input[@node-type='password']").send_keys(str(i[2]))  # 弹出登录窗口输入密码
-                    sleep(1)
-                    driver.find_element_by_xpath("//a[@node-type='submitBtn']").click()  # 弹出登录窗口点击登录按钮LIKE按钮
-                    sleep(1)
+                    sleep(5)
+                    driver.find_element_by_xpath("//a[@node-type='submitBtn']").click()  # 弹出登录窗口点击登录按钮
+                    sleep(6)
 
                     try:
-                      driver.find_element_by_xpath("//span[@node-type='like_status']").click()  # 点击第一条微博的
+                      driver.find_element_by_xpath("//span[@node-type='like_status']").click()  # 点击第一条微博的LIKE按钮
 
 
                     except WebDriverException as e:
