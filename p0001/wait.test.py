@@ -14,16 +14,17 @@ def wb_base(Wb_Acc, Wb_lgn):
 
 try:
          with db.cursor() as cursor:
-            sql1 = 'select * from wb_temp where wb_num >=1'
+            sql1 = 'select * from wb_stat where wb_num >=1'
             dbops1 = cursor.execute(sql1)
             dbops2 = cursor.fetchall()
-            Wb_url = input("pls input url:")
-            print(Wb_url)
+            #Wb_url = input(str("pls input url:"))
+            #print(Wb_url)
             for i in dbops2:
                 wb_base(i[1], i[2])
                 while True:
                     driver = webdriver.Chrome() #调用chrome
-                    driver.get() #进入博主主页
+                    #driver.get("%s" %(Wb_url))
+                    driver.get("") #进入博主主页
                     sleep(20)
                     driver.find_element_by_xpath("//span[@node-type='like_status']").click()  # 点击第一条微博的LIKE按钮
                     sleep(3)
