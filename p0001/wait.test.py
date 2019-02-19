@@ -19,6 +19,7 @@ try:
             dbops2 = cursor.fetchall()
             #Wb_url = input(str("pls input url:"))
             #print(Wb_url)
+            count_flag = 0
             for i in dbops2:
                 wb_base(i[1], i[2])
                 while True:
@@ -44,6 +45,10 @@ try:
 
                     break
                 driver.close()
+                count_flag = count_flag + 1
+                if count_flag % 5 == 0:
+                    # 操作手机断网
+                    pass
 
 
 except Exception as e:
